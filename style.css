@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:black;
+}
+.row-poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+.row-posters{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.row-poster:hover{
+    transform:scale(1.08);
+
+}
+.row-posters::-webkit-scrollbar{
+    display: none;
+}
+.row-poster-large{
+    max-height: 250px;
+}
+.row-poster-large:hover{
+    transform:scale(1.09);
+}
+.row{
+    color: white;
+    margin-left: 20px;
+}
+.banar{
+    background-image:url("asset/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+}
+.banar-contents{
+    margin-left:30px;
+    padding-top:140px;
+    height:190px;
+}
+.banar-title{
+    font-size: 3rem;
+    font-weight:800;
+    padding-bottom:0.3rem;
+}
+.banar-discription{
+    width: 45rem;
+    line-height:1.3;
+    padding-top:1rem;
+    font-size:0.8rem;
+    max-width: 360px; 
+    height:180px;
+}
+.banar-button{
+    cursor: pointer;
+    color:white;
+    outline: none;
+    font-weight: 200;
+    border-radius:0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    background-color:rgba(51,51, 51, 0.5);
+}
+.banar-button:hover{
+    color:rgb(5, 4, 4);
+    background-color:white;
+    transition:all 0.2s;
+    
+}
+.banner--fadeclor
+{
+margin-top: 145px;
+height: 7.4rem;
+background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+
+}
+.nav-logo{
+    width:80px;
+    object-fit: contain;
+}
+.nav-avadar{
+    width:30px;
+    object-fit: contain;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+
+
+}
+.nav-black{
+    background-color: rgb(14, 1, 1);
+}
